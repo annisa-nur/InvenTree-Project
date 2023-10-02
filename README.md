@@ -10,8 +10,56 @@ InvenTree adalah Sistem Manajemen Inventaris yang menyediakan kontrol stok tingk
 
 ## :star2: Instalasi
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
-- Langkah instalasi dalam CLI.
+### Kebutuhan Sistem
+- Linux OS (Ubuntu 20.04 LTS atau Debian 11)
+- Docker
+
+### Langkah Instalasi
+Terdapat 2 pilihan instalasi, yaitu dengan menggunakan docker atau instalasi secara langsung pada sistem.
+
+### Docker
+Instalasi menggunakan docker akan menjalankan sistem lengkap beserta demo data.
+
+#### Install docker terlebih dahulu:
+- Ubuntu: [Panduan Instalasi Docker pada Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+- Debian: [Panduan Instalasi Docker pada Debian](https://docs.docker.com/engine/install/debian/)
+
+#### Clone repository
+```
+git clone https://github.com/inventree/InvenTree.git
+```
+
+#### Import demo data
+```
+docker compose run inventree-dev-server invoke install
+docker compose run inventree-dev-server invoke setup-test --dev
+```
+
+#### Pengaturan port (opsional)
+Anda dapat mengatur port dimana web akan berjalan. Secara default, web server akan berjalan pada port 8000.
+```
+ports:
+    # Expose web server on port 8000
+    - 8000:8000
+```
+
+#### Jalankan menggunakan docker compose
+```
+docker compose up -d
+```
+Aplikasi web akan dapat diakses melalui http://localhost:8000 atau http://ip-vm:8000 jika Anda melakukan instalasi menggunakan virtual machine.
+
+### Bare Metal
+
+#### Quick Script
+Untuk instalasi pada bare metal cukup jalankan script berikut.
+```
+wget -qO install.sh https://get.inventree.org && bash install.sh
+```
+Script tersebut akan melaksanakan semua instalasi tanpa adanya input manual. Instalasi akan memakan waktu sekitar 5-10 menit. 
+
+#### Penjelasan
+Setelah script tersebut berjalan maka web server akan berjalan pada port 80. Instalasi web tersebut akan menggunakan nginx sebagai reverse proxy, jadi server aslinya berjalan pada port 6000, lalu di reverse proxy oleh nginx sehingga tampil pada port 80.
 
 
 ## :star2: Cara Pemakaian
