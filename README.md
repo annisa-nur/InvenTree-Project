@@ -104,16 +104,54 @@ Setelah script tersebut berjalan maka web server akan berjalan pada port 80. Ins
 
 ## :star2: Cara Pemakaian
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+Cara pemakaian InvenTree ini sebenarnya tidak terlalu sulit walaupun memiliki _interface_ yang sedikit kompleks. Penjelasan cara pemakaiannya adalah sebagai berikut:
+    1. Sebelum menggunakan InvenTree, kita perlu login ke dalam Web App-nya terlebih dahulu.
+        <div align="center">
+        <p float="left">
+          <img src="/img/inventreelogin.png" width="400" height="auto" />
+        </p>
+        </div>
+       Dalam mengakses web App ini terdapat beberapa role yang disesuaikan dengan kebutuhan pengguna. 
+       
+    2. Setelah login, kita akan masuk ke halaman utama dan melihat laporan mengenai stock. Di bagian kiri atas, terdapat berbagai menu yang dapat kita gunakan, seperti            _Parts_, _Stock_, _Build_, _Buy_, dan _Sell_. Kemudian di bagian samping kiri kita juga dapat melihat menu lainnya mengenai _part_, _stock_, dan orderan. 
+    
+    3. Pada bagian _parts_, terdapat tampilan utama mengenai 4 panel berbeda, yaitu kategori, detail, tab, dan konten setiap tab. Objek _parts_ adalah arketipe dari setiap        item stok dalam _inventoty_. Setiap _part_ yang didefinisikan dalam database menyediakan sejumlah atribut berbeda yang menentukan bagaimana _part_ tersebut dapat           digunakan.
+    
+    4. Bagian _Stocks_ berisi informasi mengenai stok yang dimiliki. Pada bagian ini kita dapat memantau stok barang, lokasi stok, dan status stok.
+        <ul>
+            <li>Item stok adalah contoh sebenarnya dari item _part_. Ini menyatakan kuantitas fisik dari _part_ di lokasi tertentu.</li>
+            <li>Lokasi stok mewakili lokasi fisik dunia nyata tempat stok barang disimpan</li>
+            <li>Status stok digunakan untuk melihat kondisi terkini dari masing-masing stok barang apakah baik, perlu perhatian, hancur, hilang, dan status lainnya.</li>
+        </ul>
+        
+    5. Menu Build menampilkan informasi mengenai _build orders_. _Build Order_ dari section build digunakan untuk membuat stok baru dengan merakit bagian-bagian komponen,         sesuai dengan Bill of Materials (BOM). BOM dapat ditentukan untuk setiap Bagian yang ditetapkan sebagai satu kesatuan. BOM terdiri dari bagian lain yang ditetapkan         sebagai Komponen. _Build Order_ menggunakan BOM untuk mengalokasikan stok item ke proses perakitan. Saat Build Order selesai, jumlah stok yang diperlukan dikurangi         dari stok item yang dialokasikan.
+    
+    6. Menu _Buy_ berisi mengenai catatan yang berkaitan dengan pembelian stok bagi perusahaan. Menu ini dibagi menjadi tiga bagian, yaitu _suppliers_, _manufacturers_,           dan _purchase orders_.
+        <ul>
+            <li>Bagian _suppliers_ berisi mengenai perusahaan-perusahaan yang memasok barang-barang untuk stok</li>
+            <li>Bagian _manufacturers_ berisi mengenai perusahaan-perusahaan yang memproduksi barang-barang untuk stok</li>
+            <li>_Purchase orders_ memungkinkan untuk melacak suku cadang mana yang dibeli dari pemasok dan produsen, sehingga mengubah barang yang dibeli secara eksternal                  menjadi barang stok/inventory.</li>
+        </ul>
+        
+    7. Menu _Sell_ berisi mengenai catatan yang berkaitan dengan penjualan stok. Menu ini juga dibagi menjadi tiga bagian, yaitu _customers_, _sakes orders_, dan _return          orders_.
+         <ul>
+            <li>Bagian _customer_ berisi data mengenai perusahaan atau individu yang menjadi pelanggan</li>
+            <li>_Sales orders_ memungkinkan pelacakan item stok mana yang dijual kepada pelanggan, sehingga mengubah stok item atau inventaris menjadi item yang dijual                     secara eksternal.</li>
+            <li>_Return orders_ memungkinkan barang stok (yang telah dijual atau dialokasikan kepada pelanggan) untuk dikembalikan ke dalam stok, biasanya  untuk tujuan                    perbaikan atau pengembalian uang. </li>
+        </ul>
 
+    8. Selain menu-menu mengenai pembelian dan penjualan stok, Inventree juga menyediakan menu lainnya, seperti menu notifikasi yang berfungsi untuk melihat berbagai              notifikasi dan riwayat. Kemudian erdapat juga fitur _scan barcode_ dan _search_. 
 
 ## :star2: Pembahasan
 
-- Pendapat anda tentang aplikasi web ini
-    - kelebihan
-    - kekurangan
+**InvenTree adalah sebuah web App yang ditulis dalam bahasa pemrograman python. Web App ini menggunakan python/Django untuk backend basis datanya. InvenTree menyediakan antarmuka admin (berbasis web) dan REST API untuk interaksi dengan antarmuka dan aplikasi eksternal. Web App ini memiliki beberapa kelebihan dan kekurangan, diantaranya adalah sebagai berikut.**
+_**Kelebihan**_
+    1. Sistem plugin yang kuat menyediakan dukungan untuk aplikasi dan ekstensi khusus.
+    2. 
+    
+_**Kekurangan**_
+    1. Memiliki desain yang tidak responsive, sehingga hanya dapat dibuka menggunakan device tertentu.
+    2.
       
 _**Perbandingan dengan aplikasi web lain yang sejenis (InvenTree VS Fleetbase)**_
 #### 1. Bahasa Pemrograman dan Teknologi:
