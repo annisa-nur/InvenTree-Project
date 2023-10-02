@@ -1,6 +1,8 @@
 # Aplikasi Web "InvenTree"
 
-<img src="img/inventree.png" alt="InvenTree logo" width="200" height="auto" />
+<div align="center">
+    <img src="img/inventree.png" alt="InvenTree logo" width="200" height="auto" />
+</div>
 
 ## Sekilas Tentang
 
