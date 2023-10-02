@@ -75,19 +75,16 @@ Kedua platform memiliki komunitas yang kuat, sehingga pengembang dapat dengan mu
 
 #### Tampilan
 
-| InvenTree                             | Fleetbase                            |
-| ------------------------------------- | ------------------------------------ |
-| ![inventree](img/inventreelogin.png)  | ![fleetbase](img/fleetbaselogin.png) |
-| ![inventree](img/inventree.jpeg)      | ![fleetbase](img/fleetbase.png)      |
-
-<p float="left">
-  <img src="/img/inventreelogin.png" width="100" />
-  <img src="/img/fleetbaselogin.png" width="100" /> 
-</p>
-<p float="left">
-  <img src="/img/inventree.jpeg" width="100" />
-  <img src="/fleetbase.png" width="100" /> 
-</p>
+<div align="center">
+    <p float="left">
+          <img src="/img/inventreelogin.png" width="400" height="auto" />
+          <img src="/img/fleetbaselogin.png" width="400" height="auto" /> 
+    </p>
+    <p float="left">
+          <img src="/img/inventree.jpeg" width="400" height="auto"/>
+          <img src="/img/fleetbase.png" width="400" height="auto" /> 
+    </p>
+</div>
 
 <ul>
     <li>Website InvenTree: dibuat dengan tampilan terang dan masih kurang memperhatikan sisi kenyamanan pengguna.</li>
