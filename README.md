@@ -77,8 +77,8 @@ Kedua platform memiliki komunitas yang kuat, sehingga pengembang dapat dengan mu
 
 | InvenTree                             | Fleetbase                            |
 | ------------------------------------- | ------------------------------------ |
-| ![inventree](img/inventreelogin.jpeg) | ![fleetbase](img/fleetbaselogin.png) |
-| ![inventree](img/inventree.png)       | ![fleetbase](img/fleetbase.png)      |
+| ![inventree](img/inventreelogin.png)  | ![fleetbase](img/fleetbaselogin.png) |
+| ![inventree](img/inventree.jpeg)      | ![fleetbase](img/fleetbase.png)      |
 
 
 <ul>
