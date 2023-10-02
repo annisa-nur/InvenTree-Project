@@ -17,25 +17,33 @@ InvenTree adalah Sistem Manajemen Inventaris yang menyediakan kontrol stok tingk
 ### Langkah Instalasi
 Terdapat 2 pilihan instalasi, yaitu dengan menggunakan docker atau instalasi secara langsung pada sistem.
 
+### Login ke server menggunakan ssh
+```
+ssh komdatakses@20.187.109.229
+```
+<details>
+    <summary>Dengan Docker</summary>
+    <p>
+    
 ### Docker
 Instalasi menggunakan docker akan menjalankan sistem lengkap beserta demo data.
 
-#### Install docker terlebih dahulu:
+#### 1. Install docker terlebih dahulu:
 - Ubuntu: [Panduan Instalasi Docker pada Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 - Debian: [Panduan Instalasi Docker pada Debian](https://docs.docker.com/engine/install/debian/)
 
-#### Clone repository
+#### 2. Clone repository
 ```
 git clone https://github.com/inventree/InvenTree.git
 ```
 
-#### Import demo data
+#### 3. Import demo data
 ```
 docker compose run inventree-dev-server invoke install
 docker compose run inventree-dev-server invoke setup-test --dev
 ```
 
-#### Pengaturan port (opsional)
+#### 4. Pengaturan port (opsional)
 Anda dapat mengatur port dimana web akan berjalan. Secara default, web server akan berjalan pada port 8000.
 ```
 ports:
@@ -43,20 +51,52 @@ ports:
     - 8000:8000
 ```
 
-#### Jalankan menggunakan docker compose
+#### 5. Jalankan menggunakan docker compose
 ```
 docker compose up -d
 ```
 Aplikasi web akan dapat diakses melalui http://localhost:8000 atau http://ip-vm:8000 jika Anda melakukan instalasi menggunakan virtual machine.
 
+#### Login Details
+
+Terdapat beberapa akun default yang disediakan, sebagaimana diuraikan di bawah ini. Setiap akun diberikan seperangkat izin yang berbeda, sehingga pengguna dapat melihat bagaimana sistem oles/permission InvenTree  berfungsi.
+
+| Username | Password | Description |
+| --- | --- | --- |
+| allaccess | nolimits | View / create / edit all pages and items |
+| reader | readonly | Can view all pages but cannot create, edit or delete database records |
+| engineer | partsonly | Can manage parts, view stock, but no access to purchase orders or sales orders |
+| admin | inventree | Superuser account, access all areas plus administrator actions |
+
+</details>
+
+<details>
+    <summary>Tanpa Docker</summary>
+    <p>
+
 ### Bare Metal
 
-#### Quick Script
+#### 1. Quick Script
 Untuk instalasi pada bare metal cukup jalankan script berikut.
 ```
 wget -qO install.sh https://get.inventree.org && bash install.sh
 ```
 Script tersebut akan melaksanakan semua instalasi tanpa adanya input manual. Instalasi akan memakan waktu sekitar 5-10 menit. 
+
+#### Penjelasan
+Setelah script tersebut berjalan maka web server akan berjalan pada port 80. Instalasi web tersebut akan menggunakan nginx sebagai reverse proxy, jadi server aslinya berjalan pada port 6000, lalu di reverse proxy oleh nginx sehingga tampil pada port 80.
+
+#### Login Details
+Setelah quick script dijalankan dan semua instalasi selesai, maka sistem akan memberikan satu buah akses akun admin untuk login. Berikut merupakan salah satu contohnya.
+```
+Admin user data:
+   Email: admin@example.com
+   Username: admin
+   Password: 66l2bIfyTD9g6co5NWjsfjFohlhjxL1YLWMeLyGHaKE=
+####################################################################################
+```
+</details>
+
 
 #### Penjelasan
 Setelah script tersebut berjalan maka web server akan berjalan pada port 80. Instalasi web tersebut akan menggunakan nginx sebagai reverse proxy, jadi server aslinya berjalan pada port 6000, lalu di reverse proxy oleh nginx sehingga tampil pada port 80.
