@@ -28,7 +28,7 @@ InvenTree adalah Sistem Manajemen Inventaris yang menyediakan kontrol stok tingk
     - kekurangan
       
 _**Perbandingan dengan aplikasi web lain yang sejenis (InvenTree VS Fleetbase)**_
-#### Bahasa Pemrograman dan Teknologi:
+#### 1. Bahasa Pemrograman dan Teknologi:
 
 <ul>
     <li>Website InvenTree: Menggunakan bahasa pemrograman Phyton/Django. Database yang digunakan adalah MySQL/PostgreSQL. </li>
@@ -40,7 +40,7 @@ Perbandingan:
 Website Fleetbase menggunakan PHP dan Laravel, sementara InvenTree menggunakan Python dan Django. Pilihan bahasa pemrograman dan framework dapat bergantung pada preferensi pengembang dan kebutuhan proyek.
 Website Fleetbase menggunakan MySQL sebagai database, sedangkan InvenTree bisa menggunakan MySQL/PostgreSQL. PostgreSQL biasanya lebih kuat dalam manajemen data kompleks dan memiliki fitur-fitur canggih.
 
-#### Arsitektur Aplikasi:
+#### 2. Arsitektur Aplikasi:
 
 <ul>
     <li>Website InvenTree: Django menggunakan pola desain yang mirip dengan MVC yang disebut Model-View-Template (MVT), yang juga memisahkan logika aplikasi, tampilan, dan data. </li>
@@ -51,7 +51,7 @@ Perbandingan:
 
 Kedua sistem menggunakan pendekatan yang serupa dalam pemisahan tugas antara komponen-komponen inti aplikasi.
 
-#### Kemampuan dan Fitur:
+#### 3. Kemampuan dan Fitur:
 
 <ul>
     <li>Website InvenTree: Selain fitur dasar manajemen inventori, juga menyediakan fitur-fitur tambahan seperti prediksi permintaan, analisis stok, dan integrasi dengan layanan pihak ketiga seperti sistem akuntansi. </li>
@@ -62,7 +62,7 @@ Perbandingan:
 
 Website Fleetbase menawarkan beberapa fitur tambahan yang dapat memberikan nilai tambah dalam manajemen inventori. Selain itu, Fleetbase menyediakan extension yang dpaat digunakan oleh para pengguna. Namun, keduanya tetap memiliki fitur yang sangat lengkap.
 
-#### Komunitas dan Dukungan:
+#### 4. Komunitas dan Dukungan:
 
 <ul>
     <li>Website InvenTree: Django juga memiliki komunitas yang kuat dan berbagai sumber daya dukungan, serta pustaka ekstensi yang luas.</li>
@@ -73,7 +73,7 @@ Perbandingan:
 
 Kedua platform memiliki komunitas yang kuat, sehingga pengembang dapat dengan mudah mencari dukungan dan sumber daya tambahan.
 
-#### Tampilan
+#### 5. Tampilan
 
 <div align="center">
     <p float="left">
@@ -95,7 +95,7 @@ Perbandingan:
 
 Website Fleetbase secara UX lebih nyaman untuk digunakan karena tampilannya memudahkan pengguna yang awam sekalipun.
 
-#### Keamanan:
+#### 6. Keamanan:
 
 <ul>
     <li>Website InvenTree: Django juga memiliki sejumlah fitur keamanan bawaan dan mempromosikan praktik-praktik keamanan yang baik.</li>
