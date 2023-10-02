@@ -75,11 +75,15 @@ Kedua platform memiliki komunitas yang kuat, sehingga pengembang dapat dengan mu
 
 #### Tampilan
 
+| InvenTree                             | Fleetbase                            |
+| ------------------------------------- | ------------------------------------ |
+| ![inventree](img/inventreelogin.jpeg) | ![fleetbase](img/fleetbaselogin.png) |
+| ![inventree](img/inventree.png)       | ![fleetbase](img/fleetbase.png)      |
 
 
 <ul>
-    <li>Website InvenTree: </li>
-    <li>Website Fleetbase: </li>
+    <li>Website InvenTree: dibuat dengan tampilan terang dan masih kurang memperhatikan sisi kenyamanan pengguna.</li>
+    <li>Website Fleetbase: dibuat dengan tampilan gelap dan sudah cukup memperhatikan sisi kenyamanan pengguna.</li>
 </ul>
 
 Perbandingan:
@@ -89,8 +93,8 @@ Website Fleetbase secara UX lebih nyaman untuk digunakan karena tampilannya memu
 #### Keamanan:
 
 <ul>
-    <li>Website InvenTree: Django juga memiliki sejumlah fitur keamanan bawaan dan mempromosikan praktik-praktik keamanan yang baik. </li>
-    <li>Website Fleetbase: Laravel dikenal dengan fitur-fitur keamanan bawaannya seperti perlindungan terhadap serangan SQL Injection dan XSS..</li>
+    <li>Website InvenTree: Django juga memiliki sejumlah fitur keamanan bawaan dan mempromosikan praktik-praktik keamanan yang baik.</li>
+    <li>Website Fleetbase: Laravel dikenal dengan fitur-fitur keamanan bawaannya seperti perlindungan terhadap serangan SQL Injection dan XSS.</li>
 </ul>
 
 Perbandingan:
