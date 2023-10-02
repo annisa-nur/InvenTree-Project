@@ -112,13 +112,23 @@ Cara pemakaian InvenTree ini sebenarnya tidak terlalu sulit walaupun memiliki _i
         <p float="left">
              <img src="/img/inventreelogin.png" width="400" height="auto" />
         </p>
-    </div>
+   </div>
         
    Dalam mengakses web App ini terdapat beberapa role yang disesuaikan dengan kebutuhan pengguna. 
        
-2. Setelah login, kita akan masuk ke halaman utama dan melihat laporan mengenai stock. Di bagian kiri atas, terdapat berbagai           menu yang dapat kita gunakan, seperti _Parts_, _Stock_, _Build_, _Buy_, dan _Sell_. Kemudian di bagian samping kiri kita juga        dapat melihat menu lainnya mengenai _part_, _stock_, dan orderan. 
+2. Setelah login, kita akan masuk ke halaman utama dan melihat laporan mengenai stock. Di bagian kiri atas, terdapat berbagai menu yang dapat kita gunakan, seperti            _Parts_, _Stock_, _Build_, _Buy_, dan _Sell_. Kemudian di bagian samping kiri kita juga dapat melihat menu lainnya mengenai _part_, _stock_, dan orderan. 
+    <div align="center">
+        <p float="left">
+             <img src="/img/Homepage.jpeg" width="400" height="auto" />
+        </p>
+    </div>
     
-3. Pada bagian _parts_, terdapat tampilan utama mengenai 4 panel berbeda, yaitu kategori, detail, tab, dan konten setiap tab. Objek _parts_ adalah arketipe dari setiap item stok dalam _inventoty_. Setiap _part_ yang didefinisikan dalam database menyediakan sejumlah atribut berbeda yang menentukan bagaimana _part_ tersebut dapat digunakan.
+3. Pada bagian _parts_, terdapat tampilan utama mengenai 4 panel berbeda, yaitu kategori, detail, tab, dan konten setiap tab. Objek _parts_ adalah arketipe dari setiap        item stok dalam _inventoty_. Setiap _part_ yang didefinisikan dalam database menyediakan sejumlah atribut berbeda yang menentukan bagaimana _part_ tersebut dapat           digunakan.
+    <div align="center">
+        <p float="left">
+             <img src="/img/Parts.jpeg" width="400" height="auto" />
+        </p>
+    </div>
     
 4. Bagian _Stocks_ berisi informasi mengenai stok yang dimiliki. Pada bagian ini kita dapat memantau stok barang, lokasi stok, dan status stok.
         <ul>
@@ -126,8 +136,18 @@ Cara pemakaian InvenTree ini sebenarnya tidak terlalu sulit walaupun memiliki _i
             <li>Lokasi stok mewakili lokasi fisik dunia nyata tempat stok barang disimpan</li>
             <li>Status stok digunakan untuk melihat kondisi terkini dari masing-masing stok barang apakah baik, perlu perhatian, hancur, hilang, dan status lainnya.</li>
         </ul>
+    <div align="center">
+        <p float="left">
+             <img src="/img/Stock.jpeg" width="400" height="auto" />
+        </p>
+    </div>
         
 5. Menu Build menampilkan informasi mengenai _build orders_. _Build Order_ dari section build digunakan untuk membuat stok baru dengan merakit bagian-bagian komponen, sesuai dengan Bill of Materials (BOM). BOM dapat ditentukan untuk setiap Bagian yang ditetapkan sebagai satu kesatuan. BOM terdiri dari bagian lain yang ditetapkan sebagai Komponen. _Build Order_ menggunakan BOM untuk mengalokasikan stok item ke proses perakitan. Saat Build Order selesai, jumlah stok yang diperlukan dikurangi dari stok item yang dialokasikan.
+    <div align="center">
+        <p float="left">
+             <img src="/img/Build.jpeg" width="400" height="auto" />
+        </p>
+    </div>
     
 6. Menu _Buy_ berisi mengenai catatan yang berkaitan dengan pembelian stok bagi perusahaan. Menu ini dibagi menjadi tiga bagian, yaitu _suppliers_, _manufacturers_, dan _purchase orders_.
         <ul>
@@ -135,6 +155,13 @@ Cara pemakaian InvenTree ini sebenarnya tidak terlalu sulit walaupun memiliki _i
             <li>Bagian _manufacturers_ berisi mengenai perusahaan-perusahaan yang memproduksi barang-barang untuk stok</li>
             <li>_Purchase orders_ memungkinkan untuk melacak suku cadang mana yang dibeli dari pemasok dan produsen, sehingga mengubah barang yang dibeli secara eksternal menjadi barang stok/inventory.</li>
         </ul>
+    <div align="center">
+        <p float="left">
+            <img src="/img/Buy-supplier.jpeg" width="400" height="auto" />
+            <img src="/img/Buy-manufacturer.jpeg" width="400" height="auto" />
+            <img src="/img/Buy-po.jpeg" width="400" height="auto" />
+        </p>
+    </div>
         
 7. Menu _Sell_ berisi mengenai catatan yang berkaitan dengan penjualan stok. Menu ini juga dibagi menjadi tiga bagian, yaitu _customers_, _sakes orders_, dan _return orders_.
          <ul>
@@ -143,7 +170,20 @@ Cara pemakaian InvenTree ini sebenarnya tidak terlalu sulit walaupun memiliki _i
             <li>_Return orders_ memungkinkan barang stok (yang telah dijual atau dialokasikan kepada pelanggan) untuk dikembalikan ke dalam stok, biasanya  untuk tujuan perbaikan atau pengembalian uang. </li>
         </ul>
 
-8. Selain menu-menu mengenai pembelian dan penjualan stok, Inventree juga menyediakan menu lainnya, seperti menu notifikasi yang berfungsi untuk melihat berbagai notifikasi dan riwayat. Kemudian erdapat juga fitur _scan barcode_ dan _search_. 
+   <div align="center">
+        <p float="left">
+            <img src="/img/Sell-cust.jpeg" width="400" height="auto" />
+            <img src="/img/Sell-salesorder.jpeg" width="400" height="auto" />
+            <img src="/img/Sell-RO.jpeg" width="400" height="auto" />
+        </p>
+    </div>
+
+8. Selain menu-menu mengenai pembelian dan penjualan stok, Inventree juga menyediakan menu lainnya, seperti menu notifikasi yang berfungsi untuk melihat berbagai notifikasi dan riwayat. Kemudian erdapat juga fitur _scan barcode_ dan _search_.
+   <div align="center">
+        <p float="left">
+            <img src="/img/tambahan.jpg" width="400" height="auto" />
+        </p>
+    </div>
 
 ## :star2: Pembahasan
 
