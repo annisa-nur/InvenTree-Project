@@ -95,12 +95,10 @@ Admin user data:
    Password: 66l2bIfyTD9g6co5NWjsfjFohlhjxL1YLWMeLyGHaKE=
 ####################################################################################
 ```
-</details>
-
 
 #### Penjelasan
 Setelah script tersebut berjalan maka web server akan berjalan pada port 80. Instalasi web tersebut akan menggunakan nginx sebagai reverse proxy, jadi server aslinya berjalan pada port 6000, lalu di reverse proxy oleh nginx sehingga tampil pada port 80.
-
+</details>
 
 ## :star2: Cara Pemakaian
 
