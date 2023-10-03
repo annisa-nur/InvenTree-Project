@@ -6,7 +6,15 @@
 
 ## :star2: Sekilas Tentang
 
-InvenTree adalah Sistem Manajemen Inventaris yang menyediakan kontrol stok tingkat rendah dan pelacakan suku cadang yang kuat. Inti dari sistem InvenTree adalah backend basis data Python/Django yang menyediakan antarmuka admin (berbasis web) dan REST API untuk interaksi dengan antarmuka dan aplikasi eksternal. Sistem plugin yang kuat menyediakan dukungan untuk aplikasi dan ekstensi khusus.
+InvenTree adalah Sistem Manajemen Inventaris yang menyediakan kontrol stok tingkat rendah dan pelacakan suku cadang yang kuat. Inti dari sistem InvenTree adalah backend basis data Python/Django yang menyediakan antarmuka admin (berbasis web) dan REST API untuk interaksi dengan antarmuka dan aplikasi eksternal. Sistem plugin yang kuat menyediakan dukungan untuk aplikasi dan ekstensi khusus. Demo bisa dicoba di link berikut 
+
+## :star2: Demo web
+### Dengan docker
+- [Demo dengan docker](https://ipb.link/inventree-komdat-kel6)
+- [Login details](####Login-Details-Docker)
+### Tanpa docker
+- [Demo tanpa docker](https://ipb.link/inventree-komdat-kel6-tanpa-docker)
+- [Login details](####Login-Details-tanpa-Docker)
 
 ## :star2: Instalasi
 
@@ -57,7 +65,7 @@ docker compose up -d
 ```
 Aplikasi web akan dapat diakses melalui http://localhost:8000 atau http://ip-vm:8000 jika Anda melakukan instalasi menggunakan virtual machine.
 
-#### Login Details
+#### Login Details Docker
 
 Terdapat beberapa akun default yang disediakan, sebagaimana diuraikan di bawah ini. Setiap akun diberikan seperangkat izin yang berbeda, sehingga pengguna dapat melihat bagaimana sistem oles/permission InvenTree  berfungsi.
 
@@ -86,7 +94,7 @@ Script tersebut akan melaksanakan semua instalasi tanpa adanya input manual. Ins
 #### Penjelasan
 Setelah script tersebut berjalan maka web server akan berjalan pada port 80. Instalasi web tersebut akan menggunakan nginx sebagai reverse proxy, jadi server aslinya berjalan pada port 6000, lalu di reverse proxy oleh nginx sehingga tampil pada port 80.
 
-#### Login Details
+#### Login Details tanpa Docker
 Setelah quick script dijalankan dan semua instalasi selesai, maka sistem akan memberikan satu buah akses akun admin untuk login. Berikut merupakan salah satu contohnya.
 ```
 Admin user data:
