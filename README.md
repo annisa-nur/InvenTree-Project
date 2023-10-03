@@ -11,10 +11,10 @@ InvenTree adalah Sistem Manajemen Inventaris yang menyediakan kontrol stok tingk
 ## :star2: Demo web
 ### Dengan docker
 - [Demo dengan docker](https://ipb.link/inventree-komdat-kel6)
-- [Login details](####Login-Details-Docker)
+- [Login details](#login-details-docker)
 ### Tanpa docker
 - [Demo tanpa docker](https://ipb.link/inventree-komdat-kel6-tanpa-docker)
-- [Login details](####Login-Details-tanpa-Docker)
+- [Login details](#login-details-tanpa-docker)
 
 ## :star2: Instalasi
 
