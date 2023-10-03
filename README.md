@@ -9,6 +9,7 @@
 InvenTree adalah Sistem Manajemen Inventaris yang menyediakan kontrol stok tingkat rendah dan pelacakan suku cadang yang kuat. Inti dari sistem InvenTree adalah backend basis data Python/Django yang menyediakan antarmuka admin (berbasis web) dan REST API untuk interaksi dengan antarmuka dan aplikasi eksternal. Sistem plugin yang kuat menyediakan dukungan untuk aplikasi dan ekstensi khusus. Demo bisa dicoba di link berikut 
 
 ## :star2: Demo web
+Web sudah dideploy menggunakan virtual machine dari azure.
 ### Dengan docker
 - [Demo dengan docker](https://ipb.link/inventree-komdat-kel6)
 - [Login details](#login-details-docker)
